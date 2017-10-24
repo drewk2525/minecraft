@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+      <title>Drew's Crafting Guide</title>
+      <link rel='stylesheet' type='text/css' href="{{ url_for('static', filename='css/style.css') }}">
+      <link rel="icon"
+          type="image/png"
+          href="{{ url_for('static', filename='images/icon_125.png') }}" />
+  </head>
+  <body>
+    <div class='wrapper'>
+      <h1>Drew's Crafting Guide</h1>
+    <p>
+      This site is a guide to crafting in Minecraft.  Click an image to get details on how to craft the item,
+      as well as more detailed information about the item!
+    </p>
+      <p>This page is still being updated!  We do not yet have all of the items from Minecraft listed, but we
+    are working on it and hope to be finished soon!<br />Thank you for your patience.</p>
+    </div>
+    {{ recipe | safe }}
+    {{ content | safe }}
+    <a href='/'><button class='home'>Return Home</button></a>
+    <footer>
+      This site is in no way affiliated with Minecraft, or any Mojang product.<br />
+      Minecraft images and other materials used on this site are protected as per the
+      <a href='https://account.mojang.com/documents/minecraft_eula' target='_blank'>Minecraft End User Licence Agreement</a>.<br />
+      The font, "Minecraftia", used on this site was created by Andrew Tyler
+      <a href='http://www.AndrewTyler.net' target='_blank'>www.AndrewTyler.net</a>
+    </footer>
+  </body>
+</html>

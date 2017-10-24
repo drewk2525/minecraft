@@ -1,0 +1,149 @@
+@font-face {
+    font-family: Minecraftia;
+    src: url('/static/fonts/Minecraftia.ttf') format('truetype');
+}
+
+body{
+    background-color: #978C88;
+    background-image: url('/static/images/world.png');
+    background-repeat: no-repeat;
+    font-family: 'Minecraftia', sans-serif;
+    text-align: center;
+    fieldset{
+        background-color: #C6C6C6;
+        border-radius: 12px;
+        border: none;
+        padding: 20px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        width: 500px;
+        box-shadow: 1px 1px 3px #666;
+        legend{
+            background-color: #C6C6C6;
+            padding: 5px 10px;
+            border-radius: 8px;
+        }
+    }
+    div.wrapper{
+        width: 640px;
+        padding: 7px 0;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
+        border: 2px solid #AAB398;
+        border-radius: 30px;
+    }
+    div.recipe{
+        display: inline-block;
+        a{
+            margin-bottom: 10px;
+        }
+    }
+    ul{
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        li{
+            margin-bottom: 10px;
+        }
+    }
+    p{
+        font-family: sans-serif;
+        text-align: left;
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h1, h2, h3{
+        text-align: center;
+    }
+    span.tooltip{
+        display:none;
+    }
+    a.item_icon{
+        display: inline-block;
+        text-align: center;
+        padding: 0;
+        border-bottom: 1px solid white;
+        border-right: 1px solid white;
+        border-top: 1px solid black;
+        border-left: 1px solid black;
+        margin-bottom:5px;
+        button{
+            padding:0;
+            cursor: pointer;
+            border: none;
+            background-color: #959595;
+        }
+    }
+    a.item_icon:hover{
+        button{
+            background-color: #ddd;
+        }
+    }
+    a:hover span.tooltip {
+        display: block;
+        position: absolute;
+        width: auto;
+        height: 20px;
+        margin-top:10px;
+        line-height: 20px;
+        padding: 5px;
+        font-size: 16px;
+        text-align: center;
+        color: #bbb;
+        background: #444;
+        border: 2px solid #444;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 2px 0px;
+    }
+    a:hover span.tooltip:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-width: 10px;
+        border-style: solid;
+        border-color: transparent transparent #444 transparent;
+        top: -20px;
+        left: 0px;
+    }
+    a:hover span.tooltip:hover{
+        display:none;
+    }
+    footer{
+        font-family: sans-serif;
+        line-height: 20px;
+        font-size: 0.9em;
+        text-align: center;
+        margin-top: 50px;
+        border-top: 4px ridge black;
+        padding-top: 10px;
+        background-color: white;
+        padding: 15px 0;
+        a{
+            color: #444;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    }
+    button.home{
+        font-family: 'Minecraftia', sans-serif;
+        border-radius: 10px;
+        border: 1px solid #777;
+        padding: 5px;
+        font-size: 16px;
+        font-weight: bold;
+        background-color: #959595;
+        color: #444;
+        text-shadow: 1px 1px #bbb;
+    }
+    button.home:hover{
+        background-color: #ddd;
+        color: #999;
+        text-shadow: 1px 1px #444;
+    }
+}
